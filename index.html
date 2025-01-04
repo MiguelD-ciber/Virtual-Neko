@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat com a Namorada Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="avatar">
+            <img src="images/avatar.png" alt="Avatar da Namorada Virtual">
+        </div>
+        <div class="language-selector">
+            <label for="language">Escolha o idioma:</label>
+            <select id="language" onchange="changeLanguage()">
+                <option value="pt-BR">Português</option>
+                <option value="en-US">English</option>
+            </select>
+        </div>
+        <div class="chat-box">
+            <div class="messages" id="messages"></div>
+            <input type="text" id="user-input" placeholder="Digite sua mensagem...">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
